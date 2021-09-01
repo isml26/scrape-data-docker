@@ -10,7 +10,7 @@
 |:--:|:--:|
 |**Node**|**14.x**|
 |**docker**|**latest version**|
-
+|**Vue.js**|**2.0**|
 
 ## Quick Start
 
@@ -34,6 +34,17 @@ client-> npm run serve
 server->npm start
 
 ```
+### Application
+<hr />
+
+|||
+|:--:|:--:|
+|![container](https://user-images.githubusercontent.com/62605922/131680453-8b805eec-199b-4bda-9da5-a9b859ac0360.gif)|![img](https://user-images.githubusercontent.com/62605922/131680501-081eefdf-93ff-4365-83af-47d863fe2d20.png)|
+
+
+
+
+
 ### Containers and logs
 <hr />
 
