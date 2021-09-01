@@ -1,0 +1,30 @@
+version: "3.9"
+services:
+  vue-server:
+    image: ismail26/vue-app
+    stdin_open: true
+    ports:
+      - "8081:80"
+    networks: 
+      - scrape-app
+  api-server:
+    image: ismail26/node-server
+    ports:
+      - "5000:5000"
+    networks: 
+      - scrape-app
+    depends_on: 
+        - mongo
+  mongo:
+    image: mongo:3.6.19
+    ports: 
+      - "27017:27017"
+    networks: 
+    - scrape-app 
+    
+networks:
+  scrape-app:
+    driver: bridge
+volumes:
+  mongo-data:
+    driver: local
