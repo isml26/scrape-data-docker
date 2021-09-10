@@ -35,11 +35,11 @@ export const scrape = (async (url) => {
             price: parseFloat(String(productPrice).trim().replace(/[^0-9]/g, "")) / 100,
             imageUrl: images,
         }
+        
+        browser.close();
         return product;
-
+        
     } catch (err) {
         console.error(err)
     }
-
-    browser.close();
 });
